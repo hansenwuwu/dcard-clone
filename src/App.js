@@ -1,13 +1,18 @@
 import React from "react";
 import "./App.css";
 
+import TopHeader from "./TopHeader";
+import MainBody from "./MainBody";
+
 function App() {
   return (
     <div className="App">
-      <h1>Dcard clone</h1>
       {/* flex box column around */}
-      {/* Header */}
-      {/* Body */}
+      <div className="app__container">
+        <TopHeader />
+        {/* Body 1280px */}
+        <MainBody />
+      </div>
     </div>
   );
 }
