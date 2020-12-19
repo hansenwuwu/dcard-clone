@@ -12,7 +12,9 @@ class Body extends Component {
     render() {
         return (
             <div className="body">
-                <Forum />
+                <div className="body__container">
+                    <Forum />
+                </div>
             </div>
         );
     }
