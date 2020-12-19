@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 
-import Header from './Header';
-import Body from './Body/Body';
-
-class Root extends Component {
+class ForumBody extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            currentForum: 'none',
-            isLogin: false
-        };
+        // this.state = {
+        //     currentForum: 'none',
+        //     isLogin: false
+        // };
 
         // this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
         // this.handleInStockChange = this.handleInStockChange.bind(this);
@@ -18,12 +15,11 @@ class Root extends Component {
     render() {
         return (
             <div>
-                <Header />
-                <Body />
+                This is forum body
             </div>
         );
     }
 
 }
 
-export default Root;
+export default ForumBody;
