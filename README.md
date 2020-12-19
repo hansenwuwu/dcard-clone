@@ -1,3 +1,5 @@
-# dcard-clone
-使用 React 實作 Dcard 網頁版介面
-施工中...
+# dcard-clone with ptt-posts
+Create a "Dcard" like webpage by React.
+And fill with ptt-posts that craw by backend server (maybe fastAPI).
+
+(only for my study use)
