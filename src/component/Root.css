@@ -1,0 +1,12 @@
+.root__container {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.root__header{
+    /* flex: 1; */
+}
+
+.root__body {
+    /* flex: 1; */
+}

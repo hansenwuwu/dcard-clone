@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './ForumBody.css';
+
 class ForumBody extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +17,16 @@ class ForumBody extends Component {
     render() {
         return (
             <div>
-                This is forum body
+                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__fillBlock">,</div>
+
             </div>
         );
     }

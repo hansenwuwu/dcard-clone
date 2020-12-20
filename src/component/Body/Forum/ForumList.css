@@ -1,0 +1,28 @@
+.forumList__container{
+    overflow-x: auto;
+    height: 500px;
+}
+
+.forumList__title {
+    display: flex;
+    /* height: 100%; */
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.forumList__title > h2 {
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, PingFang TC, 黑體-繁,
+        Heiti TC, 蘋果儷中黑, Apple LiGothic Medium, 微軟正黑體, Microsoft JhengHei,
+        sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.35);
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.forumList__list {
+    
+}

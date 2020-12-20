@@ -1,5 +1,7 @@
 .forumNavigator__container {
-    width: 210px;
+    max-width: 210px;
+    position: fixed;
+    height: calc(100vh-48px);
     
     /* background-color: lightgreen; */
 }

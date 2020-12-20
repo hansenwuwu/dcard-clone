@@ -24,8 +24,8 @@ class ForumNavigator extends Component {
             <div>
                 <div className="forumNavigator__container">
 
-                    <ForumListFixed />
-                    <ForumList />
+                    <ForumListFixed className="forumNavigator__forumListFixed" />
+                    <ForumList className="forumNavigator__forumList" />
 
                     {/* <SidebarOption text="所有看板" Icon={ListAltIcon} />
                     <SidebarOption text="即時熱門看板" Icon={WhatshotIcon} />

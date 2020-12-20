@@ -1,8 +1,9 @@
 .body {
     background-color: #10314c;
-    height: calc(100vh - 48px);
+    /* height: calc(100vh - 48px); */
+    height: fit-content;
 }
 
 .body__container {
-    padding-top: 10px;
+    padding-top: 58px;
 }

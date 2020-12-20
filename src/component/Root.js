@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Root.css';
+
 import Header from './Header';
 import Body from './Body/Body';
 
