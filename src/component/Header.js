@@ -3,17 +3,17 @@ import './Header.css'
 
 // Material UI
 import SearchIcon from "@material-ui/icons/Search";
+import CreateIcon from '@material-ui/icons/Create';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+
+import MailIcon from '@material-ui/icons/Mail';
+import PersonIcon from '@material-ui/icons/Person';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 class Header extends Component {
     constructor(props) {
         super(props);
-        // this.state = {
-        //     currentForum: 'none',
-        //     isLogin: false
-        // };
-
-        // this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-        // this.handleInStockChange = this.handleInStockChange.bind(this);
     }
 
     render() {
@@ -24,7 +24,9 @@ class Header extends Component {
 
                         <div className="header__left">
                             <a className="header_dcardIcon" href="#">
-                                <img className="header__img" src="/dcard(2).png" />
+                                <span className="header__dcardIcon__span">
+                                    <img className="header__img" src="/dcard(2).png" />
+                                </span>
                             </a>
 
                             <div className="header__search">
@@ -45,10 +47,58 @@ class Header extends Component {
                             </div>
                         </div>
 
-                        <div className="topHeader__sign">
-                            <h3>註冊 / 登入</h3>
+                        <div className="header__tool">
+                            <div className="header__tool__container">
+                                <div className="header__tool__icon">
+                                    <a href="#" className="header__tool__a">
+                                        <span className="header__tool__span">
+                                            <CreateIcon className="header__tool__icon"/>  
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className="header__tool__icon">
+                                    <a href="#" className="header__tool__a">
+                                        <span className="header__tool__span">
+                                            <NotificationsIcon className="header__tool__icon"/>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className="header__tool__icon">
+                                    <a href="#" className="header__tool__a">
+                                        <span className="header__tool__span">
+                                            <InsertDriveFileIcon className="header__tool__icon"/>  
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className="header__tool__icon">
+                                    <a href="#" className="header__tool__a">
+                                        <span className="header__tool__span">
+                                            <MailIcon className="header__tool__icon"/>  
+                                        </span>
+                                    </a> 
+                                </div>
+                                <div className="header__tool__icon">
+                                    <a href="#" className="header__tool__a">
+                                        <span className="header__tool__span">
+                                            <PersonIcon className="header__tool__icon"/>  
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className="header__tool__dropdown">
+                                    <a href="#" className="header__tool__a">
+                                        <span className="header__tool__span">
+                                            <ArrowDropDownIcon className="header__tool__icon"/> 
+                                        </span>      
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            {/* <div className="topHeader__sign">
+                                <h3>註冊 / 登入</h3>
+                            </div> */}
                         </div>
-                        {/* <div className="topHeader__drop"></div> */}
+
+                        
 
                     </div>
                 </div>
