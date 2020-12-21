@@ -1,7 +1,21 @@
 .forumList__container{
     flex: 1;
-    overflow-x: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     /* height: 500px; */
+}
+
+.forumList__container::-webkit-scrollbar {
+    width: 10px;
+}
+.forumList__container::-webkit-scrollbar-track {
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+.forumList__container::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .forumList__title {
@@ -22,8 +36,4 @@
     height: 44px;
     text-align: center;
     line-height: 44px;
-}
-
-.forumList__list {
-    
 }

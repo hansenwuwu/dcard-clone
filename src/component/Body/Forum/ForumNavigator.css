@@ -11,7 +11,7 @@
     /* margin-top: 20px; */
     position: sticky;
     top: 68px;
-    height: calc(100vh - 68px);
+    height: calc(100vh - 78px);
     display: flex;
     flex-direction: column;
 }
