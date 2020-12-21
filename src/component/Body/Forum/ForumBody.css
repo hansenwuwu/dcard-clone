@@ -1,7 +1,10 @@
+.forumBody__container {
+    flex: 0.65;
+    width: 100%;
+}
+
 .forumBody__fillBlock {
-    max-width: 100%;
-    min-width: 500px;
+    width: 100%;
     height: 300px;
     background-color: red;
-    margin-left: 45%;
 }

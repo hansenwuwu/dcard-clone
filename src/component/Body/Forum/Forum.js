@@ -4,6 +4,7 @@ import './Forum.css';
 
 import ForumBody from './ForumBody';
 import ForumNavigator from './ForumNavigator';
+import Commercial from './Commercial';
 
 class Forum extends Component {
     constructor(props) {
@@ -19,11 +20,10 @@ class Forum extends Component {
 
     render() {
         return (
-            <div>
-                <div className="forum__container">
-                    <ForumNavigator className="forum__forumNavigator" />
-                    <ForumBody className="forum__forumBody" />
-                </div>
+            <div className="forum__container">
+                <ForumNavigator />
+                <ForumBody />
+                <Commercial/>
             </div>
         );
     }

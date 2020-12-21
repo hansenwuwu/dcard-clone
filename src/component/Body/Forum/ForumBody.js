@@ -16,7 +16,7 @@ class ForumBody extends Component {
 
     render() {
         return (
-            <div>
+            <div className="forumBody__container">
                 <div className="forumBody__fillBlock">,</div>
                 <div className="forumBody__fillBlock">,</div>
                 <div className="forumBody__fillBlock">,</div>

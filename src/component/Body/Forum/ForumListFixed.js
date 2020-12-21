@@ -11,7 +11,7 @@ import SportsEsportsIcon from "@material-ui/icons/SportsEsports";
 class ForumListFixed extends Component {
     render() {
         return (
-            <div>
+            <div className="forumListFixed__container">
                 <ForumOption text="所有看板" icon={ListAltIcon} />
                 <ForumOption text="即時熱門看板" Icon={WhatshotIcon} />
                 <ForumOption text="好物研究室" Icon={StorefrontIcon} />

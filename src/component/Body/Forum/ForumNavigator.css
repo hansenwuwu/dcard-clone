@@ -1,7 +1,17 @@
 .forumNavigator__container {
-    max-width: 210px;
-    position: fixed;
-    height: calc(100vh-48px);
-    
+    /* position: fixed; */
+    /* height: calc(100vh-48px); */
+    flex: 0.15;
     /* background-color: lightgreen; */
+    margin-top: 20px;
+}
+
+.forumNavigator__fixed {
+    max-width: 210px;
+    /* margin-top: 20px; */
+    position: sticky;
+    top: 68px;
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
 }

@@ -21,11 +21,13 @@ class ForumNavigator extends Component {
 
     render() {
         return (
-            <div>
                 <div className="forumNavigator__container">
+                    <div className="forumNavigator__fixed">
+                            <ForumListFixed />
+                            <ForumList />   
+                    </div>
 
-                    <ForumListFixed className="forumNavigator__forumListFixed" />
-                    <ForumList className="forumNavigator__forumList" />
+                    
 
                     {/* <SidebarOption text="所有看板" Icon={ListAltIcon} />
                     <SidebarOption text="即時熱門看板" Icon={WhatshotIcon} />
@@ -120,7 +122,6 @@ class ForumNavigator extends Component {
                         />
                     </div> */}
                 </div>
-            </div>
         );
     }
 
