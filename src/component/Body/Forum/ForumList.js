@@ -9,7 +9,7 @@ class ForumList extends Component {
         return (
             <div className="forumList__container">
                 <div className="forumList__title">
-                    <h2>我的看板</h2>
+                    <h2>即時熱門看板</h2>
                 </div>
                 <div className="forumList__list">
                     <ForumOption text="Gossip" image="/icon/gossip_icon.svg" />
