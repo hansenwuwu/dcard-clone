@@ -12,8 +12,12 @@ class ForumList extends Component {
                     <h2>即時熱門看板</h2>
                 </div>
                 <div className="forumList__list">
-                    <ForumOption text="list1" />
-                    <ForumOption text="黎蓁個版" />
+                    <ForumOption text="Gossip" image="/icon/gossip_icon.svg" />
+                    <ForumOption text="NBA" image="/icon/nba_icon.png" />
+                    <ForumOption text="LOL" image="/icon/lol_icon.png" />
+                    <ForumOption text="Soft_job" image="/icon/computer_icon.png" />
+                    <ForumOption text="Tech_job" image="/icon/hardware_icon.jpg" />
+                    {/* <ForumOption />
                     <ForumOption />
                     <ForumOption />
                     <ForumOption />
@@ -24,11 +28,7 @@ class ForumList extends Component {
                     <ForumOption />
                     <ForumOption />
                     <ForumOption />
-                    <ForumOption />
-                    <ForumOption />
-                    <ForumOption />
-                    <ForumOption />
-                    <ForumOption />
+                    <ForumOption /> */}
                 </div>
             </div>
         );

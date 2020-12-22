@@ -9,7 +9,7 @@ class ForumOption extends Component {
                 <a href="#" className="forumListFixed__option__a">
                     <div className="forumListFixed__option__div1">
                         <span className="forumListFixed__option__icon">
-                            <img src="/icon/game_icon.png" width="30" />
+                            <img src={this.props.image} width="30" />
                         </span>
                         <div className="forumListFixed__option__text">
                             {this.props.text}
