@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
 
-
-
 class ForumOption extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         const icon = this.props.icon;
+        console.log('icon', icon);
         return (
             <div>
                 <div className="sidebarOption">

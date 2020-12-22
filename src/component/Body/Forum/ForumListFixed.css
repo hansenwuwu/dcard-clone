@@ -1,3 +1,54 @@
 .forumListFixed__container {
     flex: 1;
+    max-height: 180px;
+}
+
+.forumListFixed__a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.forumListFixed__option__div1 {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 44px;
+    padding: 0px 10px 0px 20px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.forumListFixed__option__div1:hover {
+    background-color: #0d273d;
+    border-radius: 1px;
+    transition: color 100ms ease-out;
+}
+
+.forumListFixed__option__icon {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.forumListFixed__option__text {
+    padding-left: 10px;
+    text-decoration:none !important;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, PingFang TC, 黑體-繁,
+    Heiti TC, 蘋果儷中黑, Apple LiGothic Medium, 微軟正黑體, Microsoft JhengHei,
+    sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
 }
