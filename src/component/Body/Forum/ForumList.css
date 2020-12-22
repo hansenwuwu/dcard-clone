@@ -37,3 +37,7 @@
     text-align: center;
     line-height: 44px;
 }
+
+.forumList__list {
+    /* display: flex; */
+}

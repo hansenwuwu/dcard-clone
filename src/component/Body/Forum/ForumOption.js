@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 
+import './ForumOption.css';
+
 class ForumOption extends Component {
     render() {
-        const icon = this.props.icon;
-        console.log('icon', icon);
         return (
             <div>
-                <div className="sidebarOption">
-                    <div className="sidebarOption__container">
-                        {/* <Icon className="sidebarOption__icon" /> */}
-                        <img src="/icon/game_icon.png" width="30" />
-                        <h2>{this.props.text}</h2>
+                <a href="#" className="forumListFixed__option__a">
+                    <div className="forumListFixed__option__div1">
+                        <span className="forumListFixed__option__icon">
+                            <img src="/icon/game_icon.png" width="30" />
+                        </span>
+                        <div className="forumListFixed__option__text">
+                            {this.props.text}
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         );
     }

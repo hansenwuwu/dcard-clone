@@ -59,10 +59,6 @@ class ForumListFixed extends Component {
                     </div>
                 </a>
 
-                {/* <ForumOption text="所有看板" icon={ListAltIcon} />
-                <ForumOption text="即時熱門看板" Icon={WhatshotIcon} />
-                <ForumOption text="好物研究室" Icon={StorefrontIcon} />
-                <ForumOption text="遊戲專區" Icon={SportsEsportsIcon} /> */}
             </div>
         );
     }
