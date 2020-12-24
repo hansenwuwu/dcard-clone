@@ -2,22 +2,15 @@ import React, { Component } from 'react';
 
 import './ForumBody.css';
 
-class ForumBody extends Component {
-    constructor(props) {
-        super(props);
-        // this.state = {
-        //     currentForum: 'none',
-        //     isLogin: false
-        // };
+import Post from './Post';
 
-        // this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-        // this.handleInStockChange = this.handleInStockChange.bind(this);
-    }
+class ForumBody extends Component {
 
     render() {
         return (
             <div className="forumBody__container">
                 <div className="forumBody__div">
+
                     <div className="forumBody__titleImage">
 
                     </div>
@@ -25,15 +18,24 @@ class ForumBody extends Component {
 
                     </div>
 
-                    <div className="forumBody__fillBlock">,</div>
-                    <div className="forumBody__fillBlock">,</div>
-                    <div className="forumBody__fillBlock">,</div>
-                    <div className="forumBody__fillBlock">,</div>
-                    <div className="forumBody__fillBlock">,</div>
-                    <div className="forumBody__fillBlock">,</div>
-                    <div className="forumBody__fillBlock">,</div>
-                    <div className="forumBody__fillBlock">,</div>
-                    <div className="forumBody__fillBlock">,</div>
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
 
                 </div>
 

@@ -1,0 +1,57 @@
+.post__container {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+
+.post__article {
+    background-color: gray;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
+
+.post__div {
+    width: 95%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.post__div__top {
+    width: 100%;
+    flex: 0.3;
+    background-color: lightcoral;
+    display: flex;
+}
+
+.post__div__bot {
+    width: 100%;
+    flex: 0.7;
+    background-color: lightcyan;
+}
+
+
+.post__username {
+    width: 100%;
+    background-color: lightblue;
+    height: 50%;
+    margin: auto;
+}
+
+.post__username > h3 {
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, PingFang TC, 黑體-繁,
+    Heiti TC, 蘋果儷中黑, Apple LiGothic Medium, 微軟正黑體, Microsoft JhengHei,
+    sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+}
+
+.post__title {
+    width: 100%;
+    flex: 1;
+}
