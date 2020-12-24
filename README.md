@@ -13,7 +13,8 @@ And fill with ptt-posts that craw by backend server (maybe fastAPI).
 │   │   │   ├── ForumNavigator      # 看板選區 (fixed)
 │   │   │   │   ├── ForumListFixed  #
 │   │   │   │   └── ForumList       #
-│   │   │   ├── Posts               # 文章清單
+│   │   │   ├── ForumBody           # 文章清單
+│   │   │   │   └── Post            # 單一文章
 │   │   │   └── Commercial          # 側邊廣告欄
 │   │   ├── Personal          
 │   │   └── Other               
