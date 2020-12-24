@@ -13,9 +13,9 @@ class Post extends Component {
 
     get_first_letter(s) {
         console.log(s[0]);
-        return s[0];
+        return s[0].toUpperCase();
     }
-    // {this.get_first_letter(this.props.username)}
+    // 
 
     render() {
         return (
@@ -26,7 +26,7 @@ class Post extends Component {
                         <div className="post__div__top">
                             <div className="post__username">
                                 <Avatar className="post__avatar">
-                                    H
+                                    {this.get_first_letter(this.props.username)}
                                 </Avatar>
                                 <h3>
                                     {this.props.username}
@@ -34,7 +34,8 @@ class Post extends Component {
                             </div>
                         </div>
                         <div className="post__div__bot">
-
+                            <div className="post__bot__left"></div>
+                            <div className="psot__bot__right"></div>
                         </div>
 
                         {/* <div className="post__username"></div>

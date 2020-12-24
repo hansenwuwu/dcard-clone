@@ -38,7 +38,6 @@ class ForumBody extends Component {
                         titleText="This is my first test post" />
 
                 </div>
-
             </div>
         );
     }
