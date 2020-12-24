@@ -34,8 +34,28 @@ class Post extends Component {
                             </div>
                         </div>
                         <div className="post__div__bot">
-                            <div className="post__bot__left"></div>
-                            <div className="psot__bot__right"></div>
+                            <div className="post__bot__left">
+                                <h2>
+                                    這是文章標題
+                                </h2>
+                                <p>
+                                    這是文章內容，這是文章內容，這是文章內容，這是文章內容，這是文章內容，這是文章內容，
+                                </p>
+                                <div className="post_bot__left__other">
+                                    <div className="post__bot__left__other__push">
+
+                                    </div>
+                                    <div className="post__bot__left__other__reply">
+
+                                    </div>
+                                    <div className="post__bot__left__other__other">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="psot__bot__right">
+
+                            </div>
                         </div>
 
                         {/* <div className="post__username"></div>
