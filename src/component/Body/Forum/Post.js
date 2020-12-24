@@ -36,17 +36,17 @@ class Post extends Component {
                         <div className="post__div__bot">
                             <div className="post__bot__left">
                                 <h2>
-                                    這是文章標題
+                                    這是文章標題這是文章標題這是文章標題這是文章標題這是文章標題這是文章標題這是文章標題這是文章標題
                                 </h2>
                                 <p>
                                     這是文章內容，這是文章內容，這是文章內容，這是文章內容，這是文章內容，這是文章內容，
                                 </p>
                                 <div className="post_bot__left__other">
                                     <div className="post__bot__left__other__push">
-
+                                        <h3>推文{' '}12345678</h3>
                                     </div>
                                     <div className="post__bot__left__other__reply">
-
+                                        <h3>回應{' '}12345678</h3>
                                     </div>
                                     <div className="post__bot__left__other__other">
 

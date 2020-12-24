@@ -37,6 +37,9 @@ class ForumBody extends Component {
                     <Post title="test title" username="user 01" pushnum="15" replynum="55"
                         titleText="This is my first test post" />
 
+                    <Post title="test title" username="user 01" pushnum="15" replynum="55"
+                        titleText="This is my first test post" />
+
                     <div className="forumBody__footer">
 
                     </div>
