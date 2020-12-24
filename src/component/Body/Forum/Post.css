@@ -39,6 +39,7 @@
     background-color: lightblue;
     height: 50%;
     margin: auto;
+    display: flex;
 }
 
 .post__username > h3 {
@@ -54,4 +55,14 @@
 .post__title {
     width: 100%;
     flex: 1;
+}
+
+.post__avatar {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 20px !important;
+    width: 20px !important;
+    font-size: 15px !important;
 }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Post.css';
 
+import Avatar from '@material-ui/core/Avatar';
+
 // male / female / 頭像
 // 匿名 / 使用者名稱
 // 標題
@@ -8,6 +10,13 @@ import './Post.css';
 // 按讚數/推文數 ; 回應數 ; 
 
 class Post extends Component {
+
+    get_first_letter(s) {
+        console.log(s[0]);
+        return s[0];
+    }
+    // {this.get_first_letter(this.props.username)}
+
     render() {
         return (
             <div className="post__container">
@@ -16,6 +25,9 @@ class Post extends Component {
 
                         <div className="post__div__top">
                             <div className="post__username">
+                                <Avatar className="post__avatar">
+                                    H
+                                </Avatar>
                                 <h3>
                                     {this.props.username}
                                 </h3>

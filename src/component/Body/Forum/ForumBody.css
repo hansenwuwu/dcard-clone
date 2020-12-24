@@ -23,6 +23,7 @@
     background-color: violet;
     position: sticky;
     top: 48px;
+    z-index: 10;
 }
 
 .forumBody__fillBlock {
