@@ -17,15 +17,25 @@ class ForumBody extends Component {
     render() {
         return (
             <div className="forumBody__container">
-                <div className="forumBody__fillBlock">,</div>
-                <div className="forumBody__fillBlock">,</div>
-                <div className="forumBody__fillBlock">,</div>
-                <div className="forumBody__fillBlock">,</div>
-                <div className="forumBody__fillBlock">,</div>
-                <div className="forumBody__fillBlock">,</div>
-                <div className="forumBody__fillBlock">,</div>
-                <div className="forumBody__fillBlock">,</div>
-                <div className="forumBody__fillBlock">,</div>
+                <div className="forumBody__div">
+                    <div className="forumBody__titleImage">
+
+                    </div>
+                    <div className="forumBody__title">
+
+                    </div>
+
+                    <div className="forumBody__fillBlock">,</div>
+                    <div className="forumBody__fillBlock">,</div>
+                    <div className="forumBody__fillBlock">,</div>
+                    <div className="forumBody__fillBlock">,</div>
+                    <div className="forumBody__fillBlock">,</div>
+                    <div className="forumBody__fillBlock">,</div>
+                    <div className="forumBody__fillBlock">,</div>
+                    <div className="forumBody__fillBlock">,</div>
+                    <div className="forumBody__fillBlock">,</div>
+
+                </div>
 
             </div>
         );
