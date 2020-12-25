@@ -11,11 +11,16 @@ class ForumBody extends Component {
             <div className="forumBody__container">
                 <div className="forumBody__div">
 
-                    <div className="forumBody__titleImage">
+                    {/* <div className="forumBody__titleImage">
 
-                    </div>
+                    </div> */}
                     <div className="forumBody__title">
-
+                        <div className="forumBody__title__name">
+                            <span className="forumBody__title__icon">
+                                <img src="/icon/nba_icon.png" width="50" />
+                            </span>
+                            <h1>看板名稱</h1>
+                        </div>
                     </div>
 
                     <Post title="test title" username="user 01" pushnum="15" replynum="55"
