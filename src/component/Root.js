@@ -7,7 +7,7 @@ import {
 
 import './Root.css';
 
-import Header from './Header';
+import Header from './Header/Header';
 import Body from './Body/Body';
 
 function Root(props) {
