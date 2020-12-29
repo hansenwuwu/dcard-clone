@@ -26,6 +26,18 @@
     transition: color 100ms ease-out;
 }
 
+.forumListFixed__option__div1__nohover {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 44px;
+    padding: 0px 10px 0px 20px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    text-decoration:none;
+}
+
 .forumListFixed__option__icon {
     display: flex;
     -webkit-box-align: center;

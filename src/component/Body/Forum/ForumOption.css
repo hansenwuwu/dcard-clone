@@ -6,3 +6,7 @@
 .option_backgroun_selected { 
     background-color: rgba(255, 255, 255, 0.3);
 }
+
+.forumListFixed__option__link:hover {
+    color: white;
+}
