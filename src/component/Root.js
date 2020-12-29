@@ -2,7 +2,8 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    Redirect
 } from "react-router-dom";
 
 import './Root.css';
@@ -17,8 +18,7 @@ function Root(props) {
             <div>
                 <Switch>
                     <Route exact path="/">
-                        <Header />
-                        <Body />
+                        <Redirect to="/forum" />
                     </Route>
                     <Route exact path="/:title">
                         <Header />

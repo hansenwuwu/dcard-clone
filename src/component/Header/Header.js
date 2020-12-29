@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
     useParams,
-    useRouteMatch
+    Link
 } from "react-router-dom";
 import './Header.css'
 
@@ -25,11 +25,11 @@ function Header(props) {
                 <div className="header__container">
 
                     <div className="header__left">
-                        <a className="header_dcardIcon" href="/">
+                        <Link className="header_dcardIcon" to="/forum">
                             <span className="header__dcardIcon__span">
                                 <img className="header__img" src="/dcard(2).png" />
                             </span>
-                        </a>
+                        </Link>
 
                         <div className="header__search">
                             <div className="header__search__1">
