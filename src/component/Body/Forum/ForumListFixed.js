@@ -12,7 +12,7 @@ function ForumListFixed(props) {
     return (
         <div className="forumListFixed__container">
 
-            <a href="#" className="forumListFixed__option__a">
+            <a href="/forum" className="forumListFixed__option__a">
                 <div className="forumListFixed__option__div1">
                     <span className="forumListFixed__option__icon">
                         <ListAltIcon />

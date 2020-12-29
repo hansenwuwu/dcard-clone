@@ -14,11 +14,7 @@ function Body(props) {
         <div className="body">
             <div className="body__container">
 
-                <Switch>
-                    <Route exact path="/forum">
-                        <Forum />
-                    </Route>
-                </Switch>
+                <Forum />
 
             </div>
         </div>

@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import {
+    useParams,
+    useRouteMatch
+} from "react-router-dom";
 import './Header.css'
 
 // Material UI
@@ -13,13 +17,19 @@ import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 function Header(props) {
 
+    let { path, url } = useRouteMatch();
+    console.log(url);
+
+    let { title, forum } = useParams();
+    console.log(title, ', ', forum);
+
     return (
         <div>
             <div className="header__root">
                 <div className="header__container">
 
                     <div className="header__left">
-                        <a className="header_dcardIcon" href="#">
+                        <a className="header_dcardIcon" href="/">
                             <span className="header__dcardIcon__span">
                                 <img className="header__img" src="/dcard(2).png" />
                             </span>
@@ -31,7 +41,7 @@ function Header(props) {
                                     <label className="header__search__label">
                                         <div className="header__search__label_1">
                                             <input type="search" className="header__search__input"
-                                                placeholder="搜尋 新生住宿好物">
+                                                placeholder={`搜尋 ${forum}`}>
                                             </input>
                                         </div>
                                         <div className="topHeader__searchIconContainer">

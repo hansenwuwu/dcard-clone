@@ -5,7 +5,7 @@ import './ForumOption.css';
 function ForumOption(props) {
     return (
         <div>
-            <a href="#" className="forumListFixed__option__a">
+            <a href={props.url} className="forumListFixed__option__a">
                 <div className="forumListFixed__option__div1">
                     <span className="forumListFixed__option__icon">
                         <img src={props.image} width="30" />

@@ -11,11 +11,11 @@ function ForumList(props) {
                 <h2>即時熱門看板</h2>
             </div>
             <div className="forumList__list">
-                <ForumOption text="Gossip" image="/icon/gossip_icon.svg" />
-                <ForumOption text="NBA" image="/icon/nba_icon.png" />
-                <ForumOption text="LOL" image="/icon/lol_icon.png" />
-                <ForumOption text="Soft_job" image="/icon/computer_icon.png" />
-                <ForumOption text="Tech_job" image="/icon/hardware_icon.jpg" />
+                <ForumOption url="/forum/gossip" text="Gossip" image="/icon/gossip_icon.svg" />
+                <ForumOption url="/forum/NBA" text="NBA" image="/icon/nba_icon.png" />
+                <ForumOption url="/forum/LOL" text="LOL" image="/icon/lol_icon.png" />
+                <ForumOption url="/forum/Soft-job" text="Soft-job" image="/icon/computer_icon.png" />
+                <ForumOption url="/forum/Tech-job" text="Tech-job" image="/icon/hardware_icon.jpg" />
                 {/* <ForumOption />
                     <ForumOption />
                     <ForumOption />
