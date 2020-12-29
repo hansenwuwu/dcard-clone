@@ -1,30 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
 
 import './Root.css';
 
 import Header from './Header';
 import Body from './Body/Body';
 
-class Root extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            currentForum: 'none',
-            isLogin: false
-        };
+function Root(props) {
 
-        // this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-        // this.handleInStockChange = this.handleInStockChange.bind(this);
-    }
+    return (
+        <Router>
+            <Switch>
+                <Route exact path="/">
 
-    render() {
-        return (
-            <div>
-                <Header />
-                <Body />
-            </div>
-        );
-    }
+                    <div>
+                        <Header />
+                        <Body />
+                    </div>
+
+                </Route>
+            </Switch>
+        </Router>
+    );
 
 }
 

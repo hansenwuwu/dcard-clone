@@ -1,23 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    useRouteMatch
+} from "react-router-dom";
 
 import './Body.css';
 
 import Forum from './Forum/Forum';
 
-class Body extends Component {
-    constructor(props) {
-        super(props);
-    }
+function Body(props) {
 
-    render() {
-        return (
-            <div className="body">
-                <div className="body__container">
-                    <Forum />
-                </div>
+    return (
+        <div className="body">
+            <div className="body__container">
+
+                <Forum />
+
             </div>
-        );
-    }
+        </div>
+    );
 
 }
 
