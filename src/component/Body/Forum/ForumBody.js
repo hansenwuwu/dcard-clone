@@ -10,9 +10,6 @@ function ForumBody(props) {
         <div className="forumBody__container">
             <div className="forumBody__div">
 
-                {/* <div className="forumBody__titleImage">
-
-                    </div> */}
                 <div className="forumBody__title">
                     <div className="forumBody__title__name">
                         <span className="forumBody__title__icon">

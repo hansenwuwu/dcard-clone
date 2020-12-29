@@ -1,9 +1,7 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
-    useRouteMatch
 } from "react-router-dom";
 
 import './Body.css';
@@ -16,7 +14,11 @@ function Body(props) {
         <div className="body">
             <div className="body__container">
 
-                <Forum />
+                <Switch>
+                    <Route exact path="/forum">
+                        <Forum />
+                    </Route>
+                </Switch>
 
             </div>
         </div>

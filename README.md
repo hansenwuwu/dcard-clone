@@ -22,7 +22,7 @@ And fill with ptt-posts that craw by backend server (maybe fastAPI).
 └── README.md
 ```
 
-### Pages
-1. forum / page / 
-2. home page / page 
-3. 
+### Data
+1. current forum name
+2. current forum page
+3. current page type : forum, personal, other

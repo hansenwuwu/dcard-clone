@@ -14,16 +14,20 @@ function Root(props) {
 
     return (
         <Router>
-            <Switch>
-                <Route exact path="/">
 
-                    <div>
-                        <Header />
+            <div>
+                <Header />
+
+                <Switch>
+                    <Route exact path="/">
                         <Body />
-                    </div>
+                    </Route>
+                    <Route path="/:title">
+                        <Body />
+                    </Route>
+                </Switch>
+            </div>
 
-                </Route>
-            </Switch>
         </Router>
     );
 
