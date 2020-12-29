@@ -30,8 +30,8 @@ function ForumList(props) {
 
     useEffect(() => {
 
-        console.log("forum list -> useEffect");
-        console.log(popular_forum_list);
+        // console.log("forum list -> useEffect");
+        // console.log(popular_forum_list);
 
         // api fetch popular forum list
 

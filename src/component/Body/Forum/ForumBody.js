@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import {
+    useParams,
+    Link
+} from "react-router-dom";
 
 import './ForumBody.css';
 
 import Post from './Post';
 
 function ForumBody(props) {
+
+    let { forum } = useParams();
+
+    useEffect(() => {
+        console.log('fetch posts: ', forum);
+    }, [forum])
 
     return (
         <div className="forumBody__container">
