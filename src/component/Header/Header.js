@@ -17,11 +17,7 @@ import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 function Header(props) {
 
-    let { path, url } = useRouteMatch();
-    console.log(url);
-
     let { title, forum } = useParams();
-    console.log(title, ', ', forum);
 
     return (
         <div>

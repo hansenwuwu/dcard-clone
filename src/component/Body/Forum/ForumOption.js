@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
+import {
+    useParams,
+    useRouteMatch
+} from "react-router-dom";
 
 import './ForumOption.css';
 
 function ForumOption(props) {
+
+    let { title, forum } = useParams();
+
     return (
         <div>
             <a href={props.url} className="forumListFixed__option__a">
-                <div className="forumListFixed__option__div1">
+                <div className={"forumListFixed__option__div1" + (props.text == forum ? " option_backgroun_selected" : "")}>
                     <span className="forumListFixed__option__icon">
                         <img src={props.image} width="30" />
                     </span>
@@ -15,7 +22,7 @@ function ForumOption(props) {
                     </div>
                 </div>
             </a>
-        </div>
+        </div >
     );
 }
 
