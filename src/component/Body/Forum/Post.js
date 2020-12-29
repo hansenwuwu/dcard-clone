@@ -34,7 +34,7 @@ function Post(props) {
                         <div className="post__bot__left">
                             <a href="#">
                                 <h2>
-                                    這是文章標題這是文章標題這是文章標題這是文章標題這是文章標題這是文章標題這是文章標題這是文章標題
+                                    {props.title}
                                 </h2>
                             </a>
                             <p>
@@ -42,7 +42,7 @@ function Post(props) {
                             </p>
                             <div className="post_bot__left__other">
                                 <div className="post__bot__left__other__push">
-                                    <h3>推文{' '}12345678</h3>
+                                    <h3>推文{' '}{props.pushnum == '' ? '0' : props.pushnum}</h3>
                                 </div>
                                 <div className="post__bot__left__other__reply">
                                     <h3>回應{' '}12345678</h3>
