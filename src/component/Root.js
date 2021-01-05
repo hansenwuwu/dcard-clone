@@ -28,6 +28,10 @@ function Root(props) {
                         <Header />
                         <Body />
                     </Route>
+                    <Route exact path="/:title/:forum/p/:id">
+                        <Header />
+                        <Body />
+                    </Route>
                 </Switch>
             </div>
 
