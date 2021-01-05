@@ -3,6 +3,8 @@ import './Post.css';
 
 import Avatar from '@material-ui/core/Avatar';
 
+import { useHistory, useLocation, Link } from "react-router-dom";
+
 // male / female / 頭像
 // 匿名 / 使用者名稱
 // 標題
@@ -11,8 +13,17 @@ import Avatar from '@material-ui/core/Avatar';
 
 function Post(props) {
 
+    let history = useHistory();
+    let location = useLocation();
+
     const get_first_letter = (s) => {
         return s[0].toUpperCase();
+    }
+
+    const link_click = () => {
+        console.log("link click ", props.title);
+        history.push(location.pathname + "/home");
+        // console.log(location.pathname);
     }
 
     return (
@@ -32,11 +43,16 @@ function Post(props) {
                     </div>
                     <div className="post__div__bot">
                         <div className="post__bot__left">
-                            <a href="#">
+                            <Link to={
+                                {
+                                    pathname: location.pathname + "/p/12345",
+                                    state: { modal: true },
+                                }
+                            } >
                                 <h2>
                                     {props.title}
                                 </h2>
-                            </a>
+                            </Link>
                             <p>
                                 這是文章內容，這是文章內容，這是文章內容，這是文章內容，這是文章內容，這是文章內容，
                             </p>
