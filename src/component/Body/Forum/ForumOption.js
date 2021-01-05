@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     useParams,
     Link
@@ -8,12 +8,12 @@ import './ForumOption.css';
 
 function ForumOption(props) {
 
-    let { title, forum } = useParams();
+    let { forum } = useParams();
 
     return (
         <div>
             <Link className="forumListFixed__option__link" to={props.url}>
-                <div className={(props.text == forum ? "forumListFixed__option__div1__nohover option_backgroun_selected" : "forumListFixed__option__div1")}>
+                <div className={(props.text === forum ? "forumListFixed__option__div1__nohover option_backgroun_selected" : "forumListFixed__option__div1")}>
                     < span className="forumListFixed__option__icon">
                         <img src={props.image} width="30" />
                     </span>

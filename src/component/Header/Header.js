@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     useParams,
     Link
@@ -17,7 +17,7 @@ import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 function Header(props) {
 
-    let { title, forum } = useParams();
+    let { forum } = useParams();
 
     return (
         <div>
