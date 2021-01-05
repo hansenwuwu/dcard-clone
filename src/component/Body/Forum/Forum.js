@@ -11,10 +11,12 @@ import Modal from '@material-ui/core/Modal';
 import {
     useLocation,
     useHistory,
+    useParams,
 } from "react-router-dom";
 
 function Forum(props) {
 
+    let { id } = useParams();
     let history = useHistory();
     let location = useLocation();
 
@@ -42,17 +44,22 @@ function Forum(props) {
         <div className="forum__container">
 
             <ForumNavigator />
-            <ForumBody />
+
+            { ((modal === undefined || modal === false) && id != undefined) && <PostModal handleCloseButton={handleClose} />}
+            { (modal === undefined && id === undefined) && < ForumBody />}
+            { (modal != undefined && id != undefined) && < ForumBody />}
             <Commercial />
 
-            { modal && <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="simple-modal-title"
-                aria-describedby="simple-modal-description"
-            >
-                <PostModal handleCloseButton={handleClose} />
-            </Modal>}
+            { modal &&
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="simple-modal-title"
+                    aria-describedby="simple-modal-description"
+                >
+                    <PostModal handleCloseButton={handleClose} />
+                </Modal>
+            }
 
         </div>
     );

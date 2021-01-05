@@ -3,6 +3,7 @@ import Avatar from '@material-ui/core/Avatar';
 import './PostModal.css';
 import CloseIcon from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 // read single paragraph
 
@@ -34,13 +35,31 @@ function PostModal(props) {
             </div>
 
             <div className="postModal__article">
+                {/* title */}
                 <div className="postModal__article__title">
                     <h2>這是範例文章標題</h2>
                 </div>
 
                 {/* date */}
+                <div className="postModal__article__time">
+                    {/* 看板連結 */}
+                    <Link to="#">
+                        <p className="postModal__article__time__forum">看板名稱</p>
+                    </Link>
+
+                    <p>。</p>
+                    <p>11 月 26 日</p>
+                </div>
 
                 {/* article */}
+                <div className="postModal__article__p">
+                    <p>
+                        這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例,
+                        這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例,
+                        這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例,
+                        這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例, 這是文章範例,
+                    </p>
+                </div>
 
                 {/* tag */}
 
