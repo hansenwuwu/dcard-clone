@@ -51,7 +51,7 @@ function Forum(props) {
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
             >
-                <PostModal />
+                <PostModal handleCloseButton={handleClose} />
             </Modal>}
 
         </div>
