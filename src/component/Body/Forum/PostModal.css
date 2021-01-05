@@ -1,3 +1,10 @@
+h2 {
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,黑體-繁,Heiti TC,
+    蘋果儷中黑,Apple LiGothic Medium,微軟正黑體,Microsoft JhengHei,sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
 .postModal__container {
     max-width: 728px;
     height: 100%;
@@ -18,13 +25,13 @@
     width: 80%;
     height: 50%;
     margin: auto;
+    margin-top: 35px;
     align-items: center;
     display: flex;
 }
 
 .postModal__header__author__rightContainer{
     width: 10%;
-    background-color: hotpink;
     height: 100%;
 }
 
@@ -34,14 +41,13 @@
     margin: auto;
     display: flex;
     align-items: center;
-    background-color: indigo;
 }
 
 .postModal__header__author__container > h3 {
     font-family: Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,黑體-繁,Heiti TC,
     蘋果儷中黑,Apple LiGothic Medium,微軟正黑體,Microsoft JhengHei,sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     color: rgba(0, 0, 0, 0.5);
     text-align: left;
 }
@@ -53,25 +59,33 @@
     height: 30px !important;
     width: 30px !important;
     font-size: 15px !important;
-    background-color: blueviolet !important;
-}
-
-.postModal__article{
-    width: 100%;
-    background-color: green;
-    height: 100%;
-}
-
-.postModal__closeIcon{
-    /* color: blue; */
 }
 
 .postModal__closeButton {
-
+    width: 100%;
+    height: 100%;
 }
 
 .postModal__closeButton:hover {
     text-decoration: none !important;
     background-color: transparent !important;
     color: blue;
+}
+
+.postModal__article{
+    width: 100%;
+}
+
+.postModal__article__title {
+    width: 80%;
+    height: 45px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}   
+
+.postModal__article__title > h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
