@@ -1,0 +1,7 @@
+.postModal__container {
+    max-width: 728px;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    background-color: white !important;
+}

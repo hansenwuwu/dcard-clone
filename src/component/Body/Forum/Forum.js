@@ -5,6 +5,7 @@ import './Forum.css';
 import ForumBody from './ForumBody';
 import ForumNavigator from './ForumNavigator';
 import Commercial from './Commercial';
+import PostModal from './PostModal';
 
 import Modal from '@material-ui/core/Modal';
 import {
@@ -25,7 +26,6 @@ function Forum(props) {
     useEffect(() => {
         if (modal) {
             handleOpen();
-            console.log("open");
         }
     }, [modal])
 
@@ -36,18 +36,7 @@ function Forum(props) {
     const handleClose = () => {
         setOpen(false);
         history.goBack();
-        console.log(location.pathname);
     };
-
-    const body = (
-        <div >
-            <h2 id="simple-modal-title">Text in a modal</h2>
-            <p id="simple-modal-description">
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </p>
-            {/* <Forum /> */}
-        </div>
-    );
 
     return (
         <div className="forum__container">
@@ -62,7 +51,7 @@ function Forum(props) {
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
             >
-                {body}
+                <PostModal />
             </Modal>}
 
         </div>
