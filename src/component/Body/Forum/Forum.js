@@ -45,9 +45,10 @@ function Forum(props) {
 
             <ForumNavigator />
 
-            { ((modal === undefined || modal === false) && id != undefined) && <PostModal handleCloseButton={handleClose} />}
+            { ((modal === undefined || modal === false) && id !== undefined) && <PostModal handleCloseButton={handleClose} />}
             { (modal === undefined && id === undefined) && < ForumBody />}
-            { (modal != undefined && id != undefined) && < ForumBody />}
+            { (modal !== undefined && id !== undefined) && < ForumBody />}
+
             <Commercial />
 
             { modal &&

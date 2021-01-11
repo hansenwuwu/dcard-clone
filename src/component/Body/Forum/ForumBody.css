@@ -1,12 +1,12 @@
 .forumBody__container {
-    flex: 0.65;
+    flex: 0.59;
     width: 100%;
     display: flex;
 }
 
 .forumBody__div {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -32,7 +32,7 @@
 }
 
 .forumBody__title__name {
-    width: 700px;
+    width: 650px;
     height: 50px;
     margin: auto;
     display: flex;

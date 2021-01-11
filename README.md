@@ -22,7 +22,7 @@ And fill with ptt-posts that craw by backend server (maybe fastAPI).
 └── README.md
 ```
 
-### Data
-1. current forum name
-2. current forum page
-3. current page type : forum, personal, other
+### Undone
+1. PostModal
+2. Other page
+3. forum 大小調整，整體太大
